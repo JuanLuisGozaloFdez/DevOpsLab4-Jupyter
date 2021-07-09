@@ -12,5 +12,6 @@ services:
     #  - postgres-db
     volumes:
       - ./runbooks:/runbooks
+      - ./.ssh:/home/jovyan/.ssh
       - /tmp/data:/data
       
