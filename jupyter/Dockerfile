@@ -6,7 +6,7 @@ RUN pip install -U fiona \
                    numexpr \
                    plotly \
                    cufflinks \
-                   tables \
+                   tables 
                    
 VOLUME /runbooks
 WORKDIR /runbooks
