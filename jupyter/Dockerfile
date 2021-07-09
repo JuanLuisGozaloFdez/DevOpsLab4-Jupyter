@@ -2,7 +2,8 @@ FROM jupyter/minimal-notebook
 
 RUN python --version
 
-RUN pip install -U fiona \
+RUN pip install -U matplotlib \
+                   fiona \
                    numexpr \
                    plotly \
                    cufflinks \
