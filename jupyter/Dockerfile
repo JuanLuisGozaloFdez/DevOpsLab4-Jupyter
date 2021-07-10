@@ -7,7 +7,8 @@ RUN pip install -U matplotlib \
                    numexpr \
                    plotly \
                    cufflinks \
-                   tables 
+                   tables \
+                   voila
                    
 VOLUME /runbooks
 WORKDIR /runbooks
