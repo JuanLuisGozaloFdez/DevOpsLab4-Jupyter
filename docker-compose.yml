@@ -8,10 +8,9 @@ services:
     hostname: jupyter
     ports:
       - "8888:8888"
-    #links:
-    #  - postgres-db
+      - "22:22"
     volumes:
       - ./runbooks:/runbooks
-      - ./.ssh:/home/jovyan/.ssh
+      - /home/${USER}/.ssh:/home/jovyan/.ssh
       - /tmp/data:/data
       
