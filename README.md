@@ -1,10 +1,10 @@
-# DevOpsLab4-Jupyter (WORK IN PROGRESS. NOT COMPLETED)
+# DevOpsLab4-Jupyter
+
 Lab for the DevOps Course, subject Monitoring. The lab will be used for installing Jupyter and a set of sample runbooks.
 
 ## Set Jupyter in one-single node installation with some runbooks for testing
 
-The purpose of this lab is to show how to use Jupyter Notebooks to create 
-and execute Operational RunBooks in DevOps.
+The purpose of this lab is to show how to use Jupyter Notebooks to create and execute Operational RunBooks in DevOps.
 
 Project structure:
 
