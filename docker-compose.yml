@@ -13,10 +13,4 @@ services:
       - ./runbooks:/runbooks
       - /home/${USER}/.ssh:/home/jovyan/.ssh
       - /tmp/data:/data
-  kibana:
-    image: kibana:7.8.0
-    container_name: kibana
-    ports:
-      - "5601:5601"
-
-      
+  
