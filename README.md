@@ -2,7 +2,7 @@
 
 Lab for the DevOps Course, subject Monitoring. The lab will be used for installing Jupyter and a set of sample runbooks.
 
-## Set Jupyter in one-single node installation with some runbooks for testing
+## Set Jupyter in one-single docker node installation with some runbooks for testing
 
 The purpose of this lab is to show how to use Jupyter Notebooks to create and execute Operational RunBooks in DevOps.
 
@@ -29,11 +29,15 @@ services:
       ...
 ```
 
-This compose file will create a Jupyter (`jupyter`) instances.
+This compose file will create a Jupyter (`jupyter`) docker instance.
 
-IMPORTANT NOTICE: Port 8888 on the host MUST NOT already in use.
+*** IMPORTANT NOTICE ***: Port 8888 on the host MUST NOT already in use.
 
 Runbooks will be saved in "runbooks" directory.
+
+### Other Jupyter installations ***
+
+In the repository, a Jupyterhub and a Direct Jupyter installation instructions are provided also, in case you prefer/need to follow those instead this docker instuction.
 
 ## Deploy with docker-compose
 
@@ -66,7 +70,7 @@ Execute the following command that will access the container to get the token an
 ```bash
 $ docker exec -it jupyter /opt/conda/bin/jupyter notebook list
 Currently running servers:
-http://0.0.0.0:8888/?token=1fefa6ab49a498a3f37c959404f7baf16b9a2eda3eaa6d72 :: /runbooks
+http://0.0.0.0:8888/?token=xxxxxxxxxxxxxxxxxxxxxxxxxxxx :: /runbooks
 $
 ```
 
@@ -89,4 +93,4 @@ In the runbooks directory some examples notebooks have been deployed. All of the
 
 ## How to test Jupyter Dashboard functionality
 
-Jupyter Voilà is a Jupyter extension to provide Dashboard HTML capability. To test this functionality in this DevOpsLab then .....(to be completed)
+Jupyter Voilà is a Jupyter extension to provide Dashboard HTML capability. To test this functionality in this DevOpsLab then click in Voila inside any of the notebooks to see that the notebook is executed and an HTML with all the outputs is shown in a new tab of your browser.
