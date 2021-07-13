@@ -70,11 +70,14 @@ When the virtual environment is activated, a Jupyter installation is possible wi
 
 Note: Inside virtual environment, *pip* could be used instead *pip3*.
 
-    pip install jupyter
+    pip install Jupyter
 
-So, Jupyter has been installed succesfully. But some configuration must be adapted.
+So, Jupyter has been installed succesfully.
+Then we need to create the configuration file. The file will be generated directly in a new directory named ~/.jupyter
 
-To do the configuration, edit with nano (or any other editing tool):
+    jupyter noteboook --generate-config
+
+But some configuration must be adapted. To do the configuration changes, edit with nano (or any other editing tool):
 
     nano ~/.jupyter/jupyter_notebook_config.py
 
