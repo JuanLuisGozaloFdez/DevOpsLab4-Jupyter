@@ -86,7 +86,7 @@ In the configuration file, the following options will be activated and set up:
     c.NotebookApp.allow_password_change = True
     c.NotebookApp.allow_root = True
     c.NotebookApp.ip = "localhost " (or set the remote host IP)
-    c.NotebookApp.notebook_dir = 'jupyter-dir/runbooks/'
+    c.NotebookApp.notebook_dir = 'runbooks/'
     c.NotebookApp.open_browser = False
 
 Please, notice that a default directory for runbooks is set.
@@ -109,9 +109,9 @@ To acess the notebooks, a URL will be shown in the screen with the http://host:p
 
 To stop the notebook, just press *CTRL+C*
 
-## Step 5: Connect with a SSH tunneling from a Linux system
+## Step 5: Connect with a SSH tunneling from a Linux system (if required)
 
-To create the tunnel to the remote system, type the next command to map ports and stablish the connection (assuming the port 8888 is used in the default installation, if not, set your appropiate port number):
+To create the tunnel to the remote system (if required), type the next command to map ports and stablish the connection (assuming the port 8888 is used in the default installation, if not, set your appropiate port number):
 
     ssh -L 8888:localhost:8888 server_username@server_ip
 
