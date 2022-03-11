@@ -65,18 +65,18 @@ $
 
 ## How to start using Jupyter
 
-Execute the following command that will access the container to get the token and URL link that is required to launch the envionment:
+Execute the following command that get the token and URL link that is required to launch the envionment:
 
 ```bash
-$ docker exec -it jupyter /opt/conda/bin/jupyter notebook list
-Currently running servers:
-http://0.0.0.0:8888/?token=xxxxxxxxxxxxxxxxxxxxxxxxxxxx :: /runbooks
+$ docker logs jupyter
+... aplication can be found in the following ...
+... http://127.0.0.1:8888/lab?token=xxxxxxxxxxxxxxxxxxxxxxxxxxxx ....
 $
 ```
 
 If you are accesing directly only with "http://localhost:8888" , then a LOGIN page will be shown asking for the TOKEN that you must obtain in the previous sentence.
 
-After started, some example runbooks can be accesed from inside the Jupyter desktop in the "runbook" folder of this repository (by default)
+After started, some example runbooks can be accesed from inside the Jupyter Lab desktop in the "runbook" folder of this repository (by default)
 
 Stop and remove the containers. Use `-v` to remove the volumes if looking to erase all data.
 
@@ -93,4 +93,4 @@ In the runbooks directory some examples notebooks have been deployed. All of the
 
 ## How to test Jupyter Dashboard functionality
 
-Jupyter Voilà is a Jupyter extension to provide Dashboard HTML capability. To test this functionality in this DevOpsLab then click in Voila inside any of the notebooks to see that the notebook is executed and an HTML with all the outputs is shown in a new tab of your browser.
+Jupyter Voilà is a Jupyter extension to provide Dashboard HTML capability. To test this functionality in this DevOpsLab then click in Voila icon inside any of the notebooks to see that the notebook is executed and an HTML with all the outputs is shown in a new window inside the lab interface.
